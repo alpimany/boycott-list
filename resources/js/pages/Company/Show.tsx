@@ -1,7 +1,7 @@
 import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
 import { Item, ItemContent, ItemDescription, ItemMedia, ItemTitle } from '@/components/ui/item';
-import { asset } from '@/lib/utils';
+import { storageUrl } from '@/lib/utils';
 import { Company, Product } from '@/types';
 import { Link } from '@inertiajs/react';
 import { ArrowLeft } from 'lucide-react';
@@ -28,7 +28,11 @@ export default function Products({ company, featuredProduct: product }: Props) {
                         <Item variant="outline" className="w-full">
                             <ItemMedia>
                                 <div className="h-full max-h-24 w-full max-w-24 overflow-hidden rounded md:max-h-48 md:max-w-48">
-                                    <img src={asset(product.image)} alt={product.name} className="aspect-square w-full rounded-sm object-cover" />
+                                    <img
+                                        src={storageUrl(product.image)}
+                                        alt={product.name}
+                                        className="aspect-square w-full rounded-sm object-cover"
+                                    />
                                 </div>
                             </ItemMedia>
                             <ItemContent>
@@ -43,7 +47,11 @@ export default function Products({ company, featuredProduct: product }: Props) {
                         <Item variant="outline" className="w-full">
                             <ItemMedia>
                                 <div className="h-full max-h-32 w-full max-w-32 overflow-hidden rounded">
-                                    <img src={asset(company.image)} alt={company.name} className="aspect-square w-full rounded-sm object-cover" />
+                                    <img
+                                        src={storageUrl(company.image)}
+                                        alt={company.name}
+                                        className="aspect-square w-full rounded-sm object-cover"
+                                    />
                                 </div>
                             </ItemMedia>
                             <ItemContent>

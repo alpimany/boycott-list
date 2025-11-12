@@ -22,7 +22,7 @@ final class BoycottedProductFactory extends Factory
         return [
             'name' => fake()->domainName(),
             'description' => fake()->sentence(),
-            'image' => 'https://boycott-israel.org/img/logos/apple.png',
+            'image' => fake()->imageUrl(),
         ];
     }
 }

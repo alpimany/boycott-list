@@ -21,7 +21,7 @@ final class BoycottedCompanyFactory extends Factory
     {
         return [
             'name' => fake()->company(),
-            'image' => 'https://boycott-israel.org/img/logos/apple.png',
+            'image' => fake()->imageUrl(),
             'location' => fake()->country(),
             'description' => preg_replace('/(.([^.]{100,}\.))/m', '$1\\n', fake()->realTextBetween(200, 450)),
             // 'impact_level' => fake()->numberBetween(1, 5),

@@ -1,7 +1,7 @@
 import Layout from '@/components/Layout';
 import { Input } from '@/components/ui/input';
 import { Item, ItemContent, ItemDescription, ItemHeader, ItemTitle } from '@/components/ui/item';
-import { asset } from '@/lib/utils';
+import { storageUrl } from '@/lib/utils';
 import { Product } from '@/types';
 import { InfiniteScroll, Link, router, usePage } from '@inertiajs/react';
 import { SearchIcon } from 'lucide-react';
@@ -66,7 +66,7 @@ export default function Products({ products }: Props) {
                             >
                                 <ItemHeader>
                                     <div className="h-full max-h-64 w-full max-w-64 overflow-hidden rounded">
-                                        <img src={asset(product.image)} alt={product.name} className="aspect-square w-full rounded-sm object-cover" />
+                                        <img src={storageUrl(product.image)} alt={product.name} className="aspect-square w-full rounded-sm object-cover" />
                                     </div>
                                 </ItemHeader>
                                 <ItemContent>
