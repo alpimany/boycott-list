@@ -40,7 +40,7 @@ export default function Products({ company, featuredProduct: product }: Props) {
                                 <ItemDescription>{product.description}</ItemDescription>
                             </ItemContent>
                         </Item>
-                        <p className="text-justify text-base text-zinc-300 sm:text-lg" dangerouslySetInnerHTML={{ __html: company.description }}></p>
+                        <p className="prose dark:prose-invert text-justify text-base text-zinc-300 sm:text-lg" dangerouslySetInnerHTML={{ __html: company.description }}></p>
                     </div>
                 ) : (
                     <div className="space-y-8">
@@ -59,7 +59,7 @@ export default function Products({ company, featuredProduct: product }: Props) {
                                 <ItemDescription>{company.location}</ItemDescription>
                             </ItemContent>
                         </Item>
-                        <p className="text-justify text-base text-zinc-300 sm:text-lg" dangerouslySetInnerHTML={{ __html: company.description }}></p>
+                        <p className="prose dark:prose-invert text-justify text-base text-zinc-300 sm:text-lg" dangerouslySetInnerHTML={{ __html: company.description }}></p>
                     </div>
                 )}
             </div>
