@@ -19,7 +19,7 @@ export default function Products({ company, featuredProduct: product }: Props) {
         <Layout>
             <div className="mx-auto max-w-2xl space-y-8 p-4 md:py-16">
                 <Button variant="outline" size="icon" className="float-left" asChild>
-                    <Link href={route('boycott.products.index')}>
+                    <Link href={route('boycott.home.index')}>
                         <ArrowLeft />
                     </Link>
                 </Button>
