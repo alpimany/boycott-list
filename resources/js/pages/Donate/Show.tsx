@@ -30,7 +30,7 @@ export default function Donate() {
                         التطوير
                     </h1>
                     <p className="mt-4 text-lg">
-                        قائمة المنجات المقاطعة مشروع مفتوح المصدر، ويمكنك المساهمة في التطوير إن شئت.{' '}
+                        قائمة المُنتجات المقاطعة مشروع مفتوح المصدر، ويمكنك المساهمة في تطويره إن شئت.{' '}
                         <a className="text-blue-600" href="https://github.com/alpimany/boycott-list">
                             اطلع على صفحة جتهب لتعرف المزيد.
                         </a>{' '}
